@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #212121;
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url('IntroBackgroundPattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.loaded .intro {
+    height: 80vh;
+}
+
+.small {
+    height: 80vh;
+}
+
+.loaded .small {
+    height: 60vh;
+}
+
+.intro .header-links {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.intro a {
+    color: white;
+    background-color: rgba(60, 41, 169, 0.615);
+    padding: 5px 15px;
+    text-decoration:solid;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.intro a:hover {
+    background-color: rgb(144, 88, 255);
+    padding: 5px 25px;
+    letter-spacing: 3px;
+    transform: translateY(-2px);
+}
+
+.intro h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+    transition: ease-in 1s;
+}
+
+.intro hr {
+    width: 80%;
+    border: 3px solid hsla(240, 100%, 77%, 0.5);
+    margin-bottom: 10px;
+    transition: ease-in-out 1.8s;
+}
+.loaded .intro hr {
+    width: 20%;
+}
+
+.intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0);
+    letter-spacing: 0px;
+    transition: ease-in-out 1s;
+}
+.loaded .intro p {
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: rgb(109, 202, 255);
+}
+
+.intro i {
+    position: absolute;
+    bottom: 40px;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0);
+    transition: ease-out 0.8s;
+}
+
+.loaded .intro i {
+    bottom: 100px;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #7070ff, #7cdaff, #ff79fd, #5694ff, #d104ff);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.homecontent {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: center;
+    gap: 20px;              
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    transition: 2s;
+}
+
+.loaded .homecontent {
+    padding-top: 20px;
+}
+
+.homebox {
+    position: relative;
+    width: 40%;
+    height: auto;
+    aspect-ratio: 16/9;
+    color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.homebox h1 {
+    position: absolute;
+    bottom: 25%;
+    padding-left: 5%;
+}
+
+.homebox p {
+    position: absolute;
+    bottom: 17%;
+    padding-left: 5%;
+}
+
+.homebox ul {
+    position: absolute;
+    bottom: 5%;
+    padding-left: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.homebox li {
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 5px;
+    padding: 4px;
+}
+
+.homebox:hover {
+    color: rgba(255, 255, 255);
+    width: 45%;
+}
+
+.homebox:hover li {
+    background-color: rgba(0,0,0,0);
+}
+
+
+.is-eng { background-image: url('Home_Engineering.png'); }
+.is-eng:hover { background-image: url('Home_EngineeringHover.png'); }
+
+.is-vfx { background-image: url('Home_VFX.png'); }
+.is-vfx:hover { background-image: url('Home_VFXHover.png'); }
+
+.is-art { background-image: url('Home_ExtWork.png'); }
+.is-art:hover { background-image: url('Home_ExtWorkHover.png'); }
+
+.is-car { background-image: url('Home_Career.png'); }
+.is-car:hover { background-image: url('Home_CareerHover.png'); } 
+
+.homebutton {
+    width: 60%;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    color: lightgray;
+    background-color: rgba(0, 0, 0, 0.50);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.homebutton h1 {
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.homebutton:hover {
+    color: rgb(227, 85, 85);
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 70%;
+}
+
+.medtextbox {
+    width: 40%;
+    height:fit-content;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    color: white;
+}
+
+.left {
+    text-align: left;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+.medtextbox h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.medtextbox p {
+    font-size: 13px;
+}
+
+.medtextbox b {
+    color: rgb(169, 132, 255);
+    font-size: 15px;
+}
+
+.medtextbox i {
+    font-style: normal;
+    color: rgb(150, 150, 150);
+}
+
+.medtextbox h2 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.largetextbox {
+    width: 85%;
+    height:fit-content;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    color: white;
+}
+
+.largetextbox h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.largetextbox p {
+    font-size: 13px;
+}
+
+.largetextbox b {
+    color: rgb(148, 101, 255);
+}
+
+.largetextbox h2 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.eightytextbox {
+    width: 60%;
+    height:fit-content;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    color: white;
+}
+
+.eightytextbox h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: rgb(148, 101, 255);
+}
+
+.eightytextbox p {
+    font-size: 13px;
+}
+
+.profilepicture {
+    width: 15%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    padding: 20px 20px;
+    background-image: url('ProfilePictureSite.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.medtextbox ul {
+    list-style-type: none;
+    font-size: 13px;
+}
+
+.medimagebox {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    padding: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.largeimagebox {
+    width: 85%;
+    height: auto;
+    aspect-ratio: 16/9;
+    padding: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 5px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.s1 {
+    background-image: url('FFBWheelShowcase.jpg');
+}
+
+.s2 {
+    background-image: url('FFBWheelFrontRight.png');
+    background-size: 110%;
+}
+.s2:hover {
+    background-image: url('FFBWheelFrontRightHover.png');
+    background-size: 100%;
+}
+
+.s3 {
+    background-image: url('FFBWheelTopDown.png');
+    background-size: 110%;
+}
+.s3:hover {
+    background-image: url('FFBWheelTopDownHover.png');
+    background-size: 100%;
+}
+
+.brake1 {
+    background-image: url('RegenBrakeShowcase.png');
+    background-size: 100%;
+}
+
+.brake2 {
+    background-image: url('RegenBrakeSimscape.png');
+    background-size: 100%;
+}
+
+.brake3 {
+    background-image: url('RegenBrakeSimGraphs.png');
+    background-size: 100%;
+}
+
+.d1 {
+    background-image: url('DuckProject1.png');
+}
+
+.g1 {
+    background-image: url('GoKartProject1.png');
+}
+
+.b1 {
+    background-image: url('StageV2Showcase.png');
+    background-size: 100%;
+}
+
+.b1:hover {
+    background-image: url('StageV2ShowcaseHover.png');
+    background-size: 110%;
+}
+
+.b2 {
+    background-image: url('SilversRoomShowcase.png');
+    background-size: 100%;
+}
+.b2:hover {
+    background-image: url('SilversRoomShowcaseHover.png');
+    background-size: 110%;
+}
+
+.b3 {
+    background-image: url('RUCRT_PromovidSite.gif');
+    background-size: 100%;
+}
+.b3:hover {
+    background-size: 110%;
+}
+
+.b4 {
+    background-image: url('Buffet810upd.png');
+    background-size: 100%;
+}
+.b4:hover {
+    background-image: url('BuffetAltView.png');
+    background-size: 110%;
+}
+
+.b5 {
+    background-image: url('Winkler710copy.png');
+    background-size: 100%;
+}
+.b5:hover {
+    background-image: url('WinkerAnimLonger.gif');
+    background-size: 110%;
+}
+
+.b6 {
+    background-image: url('LPC1231.png');
+    background-size: 100%;
+}
+.b6:hover {
+    background-image: url('LPCtopdown.jpg');
+    background-size: 110%;
+}
+
+.b7 {
+    background-image: url('StageV1Showcase.png');
+    background-size: 100%;
+}
+
+.b7:hover {
+    background-image: url('StageV1ShowcaseHover.gif');
+    background-size: 110%;
+}
+
+.k1 {
+    background-image: url('KoehlerCo_Paper.png');
+    background-size: 100%;
+}
+
+.medimagebox.k1 {
+    background-size: cover;
+}
+
+.k2 {
+    background-image: url('KoehlerCo_Poster.png');
+    background-size: 100%;
+}
+
+.medimagebox.k2 {
+    background-size: cover;
+}
+
+.rucrt1 {
+    background-image: url('OrthoViewCRT.png');
+    background-size: 100%;
+}
+
+.medimagebox.rucrt1 {
+    background-size: cover;
+}
+
+.rucrt2 {
+    background-image: url('RUCRT_SiteShowcase.png');
+    background-size: 100%;
+}
+
+.rucrt2:hover {
+    background-image: url('RUCRT_SiteShowcaseHover.png');
+    background-size: 100%;
+}
+
+.medimagebox.rucrt2 {
+    background-size: cover;
+}
+
+@media (max-width: 1000px) {
+    .homebox, .medimagebox, .medtextbox, .eightytextbox {
+        width: 80%;
+    }
+    .profilepicture {
+        width: 50%;
+    }
+    .homebox:hover {
+        width: 90%;
+    }
+    .homebox h1 {
+        font-size: 22px;
+    }
+    .homebox p, 
+    .homebox ul {
+        font-size: 15px;
+    }
+    .homebox li {
+        font-size: 10px;
+    }
+    .intro h1 {
+        font-size: 40px;
+    }
+    .loaded .intro p {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;  
+}
+
+.bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    color: azure;
+}
+
+.bottom p {
+    font-size: 12px;
+}
+
+.bottom a {
+    color: gray;
+    text-decoration: none;
+    font-size: 48px;
+    padding: 10px;
+}
+
+.bottom a:hover {
+    color: rgba(70, 187, 255, 0.8);
+}
+
+
