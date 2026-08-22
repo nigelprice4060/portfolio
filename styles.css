@@ -197,17 +197,17 @@ body {
 }
 
 
-.is-eng { background-image: url('Home_Engineering.png'); }
-.is-eng:hover { background-image: url('Home_EngineeringHover.png'); }
+.is-eng { background-image: url('Home_EngineeringNEW.png'); }
+.is-eng:hover { background-image: url('Home_EngineeringHoverNEW.png'); }
 
-.is-vfx { background-image: url('Home_VFX.png'); }
-.is-vfx:hover { background-image: url('Home_VFXHover.png'); }
+.is-vfx { background-image: url('Home_VFXNEW.png'); }
+.is-vfx:hover { background-image: url('Home_VFXHoverNEW.png'); }
 
-.is-art { background-image: url('Home_ExtWork.png'); }
-.is-art:hover { background-image: url('Home_ExtWorkHover.png'); }
+.is-art { background-image: url('Home_ExtWorkNEW.png'); }
+.is-art:hover { background-image: url('Home_ExtWorkHoverNEW.png'); }
 
-.is-car { background-image: url('Home_Career.png'); }
-.is-car:hover { background-image: url('Home_CareerHover.png'); } 
+.is-car { background-image: url('Home_CareerNEW.png'); }
+.is-car:hover { background-image: url('Home_CareerHoverNEW.png'); } 
 
 .homebutton {
     width: 60%;
@@ -331,7 +331,7 @@ body {
     aspect-ratio: 1/1;
     text-align: center;
     padding: 20px 20px;
-    background-image: url('ProfilePictureSite.png');
+    background-image: url('ProfilePictureSiteShrankNEW.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -383,35 +383,35 @@ body {
 }
 
 .s2 {
-    background-image: url('FFBWheelFrontRight.png');
+    background-image: url('FFBWheelFrontRightShrankNEW.png');
     background-size: 110%;
 }
 .s2:hover {
-    background-image: url('FFBWheelFrontRightHover.png');
+    background-image: url('FFBWheelFrontRightHoverShrankNEW.png');
     background-size: 100%;
 }
 
 .s3 {
-    background-image: url('FFBWheelTopDown.png');
+    background-image: url('FFBWheelTopDownShrankNEW.png');
     background-size: 110%;
 }
 .s3:hover {
-    background-image: url('FFBWheelTopDownHover.png');
+    background-image: url('FFBWheelTopDownHoverShrankNEW.png');
     background-size: 100%;
 }
 
 .brake1 {
-    background-image: url('RegenBrakeShowcase.png');
+    background-image: url('RegenBrakeShowcaseNEW.png');
     background-size: 100%;
 }
 
 .brake2 {
-    background-image: url('RegenBrakeSimscape.png');
+    background-image: url('RegenBrakeSimscapeShrankNEW.png');
     background-size: 100%;
 }
 
 .brake3 {
-    background-image: url('RegenBrakeSimGraphs.png');
+    background-image: url('RegenBrakeSimGraphsShrankNEW.png');
     background-size: 100%;
 }
 
@@ -424,12 +424,12 @@ body {
 }
 
 .b1 {
-    background-image: url('StageV2Showcase.png');
+    background-image: url('StageV2ShowcaseNEW.png');
     background-size: 100%;
 }
 
 .b1:hover {
-    background-image: url('StageV2ShowcaseHover.png');
+    background-image: url('StageV2ShowcaseHoverNEW.png');
     background-size: 110%;
 }
 
@@ -488,7 +488,7 @@ body {
 }
 
 .k1 {
-    background-image: url('KoehlerCo_Paper.png');
+    background-image: url('KoehlerCo_PaperShrankNEW.png');
     background-size: 100%;
 }
 
@@ -497,7 +497,7 @@ body {
 }
 
 .k2 {
-    background-image: url('KoehlerCo_Poster.png');
+    background-image: url('KoehlerCo_PosterShrankNEW.png');
     background-size: 100%;
 }
 
@@ -515,12 +515,12 @@ body {
 }
 
 .rucrt2 {
-    background-image: url('RUCRT_SiteShowcase.png');
+    background-image: url('RUCRT_SiteShowcaseNEW.png');
     background-size: 100%;
 }
 
 .rucrt2:hover {
-    background-image: url('RUCRT_SiteShowcaseHover.png');
+    background-image: url('RUCRT_SiteShowcaseHoverNEW.png');
     background-size: 100%;
 }
 
