@@ -32,6 +32,7 @@ function preloadImages(urls) {
     });
 }
 
-window.onload = function() {
-    document.body.className += " loaded";
-}
+// Preload after initial page load to avoid blocking core content
+window.addEventListener('load', () => {
+    preloadImages(hoverImages);
+});
